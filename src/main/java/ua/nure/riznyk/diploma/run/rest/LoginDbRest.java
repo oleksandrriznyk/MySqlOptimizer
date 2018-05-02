@@ -10,15 +10,15 @@ import java.util.List;
 @RestController("/db")
 public class LoginDbRest {
 
-    @Autowired
-    private DbService dbService;
+//    @Autowired
+//    private DbService dbService;
 
-    @GetMapping
-    public List<String> getDbSessions(@RequestParam String dbLogin,
-                                      @RequestParam String dbPassword) {
-        DbCredentials dbCredentials = new DbCredentials(dbLogin, dbPassword);
-        dbService.establishConnection(dbCredentials)ж
-
-    }
+//    @GetMapping
+//    public List<String> getDbSessions(@RequestParam String dbLogin,
+//                                      @RequestParam String dbPassword) {
+//        DbCredentials dbCredentials = new DbCredentials(dbLogin, dbPassword);
+//        dbService.establishConnection(dbCredentials)ж
+//
+//    }
 
 }

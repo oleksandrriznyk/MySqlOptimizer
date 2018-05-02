@@ -6,14 +6,18 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.time.ZonedDateTime;
+import java.util.Arrays;
+import java.util.List;
+
 @SpringBootApplication
 @EnableJSONDoc
 @RestController
 public class StartApplication {
 
     @RequestMapping("/")
-    String home() {
-        return "Hello World!";
+    List<ZonedDateTime> home() {
+        return Arrays.asList(ZonedDateTime.now());
     }
 
     public static void main(String[] args) {
